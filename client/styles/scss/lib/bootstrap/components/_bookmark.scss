@@ -1,0 +1,10 @@
+.Bookmark {
+    font-size: 22px !important;
+    color: #cccccc;
+    text-decoration: none;
+    
+    &:hover, :active, :focus {
+        text-decoration: none;
+        color: #cccccc;
+    }
+}

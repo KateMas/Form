@@ -1,0 +1,6 @@
+body {
+	&.homepage {
+		@import "layouts/homepage/button-modal";
+		@import "layouts/homepage/data";
+	}
+}

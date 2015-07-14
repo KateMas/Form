@@ -1,0 +1,9 @@
+
+@mixin appearance($value) {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none!important;
+	text-indent: 0.01px;
+	text-overflow: '';
+}

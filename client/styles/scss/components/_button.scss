@@ -1,0 +1,11 @@
+.button {
+	@include transition-property(all);
+	@include transition-duration(400ms);
+	@include background-image(linear-gradient(top, rgba(40,61,78,1) 0%,rgba(70,103,131,1) 100%));
+	&:hover {
+		@include background-image(linear-gradient(top, rgba(40,61,78,0.5) 0%,rgba(70,103,131,0.5) 100%));
+	}
+	&:visited {
+		outline: none;
+	}
+}

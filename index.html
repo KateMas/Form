@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Form</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="client/styles/css/index.css">
+    <script src="client/js/jquery-2.1.3.min.js"></script>
+    <script src="client/js/bootstrap.min.js"></script>
+   <!--  <script src="client/js/index.js"></script> -->
+   <script src="client/js/popover.js"></script>
+</head>
+<body class="homepage">
+	<div class="button-modal">
+		<!-- Button trigger modal -->
+		<button type="button" class="button btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+		  Launch demo modal
+		</button>
+		<!-- Modal -->
+		<div class="modal fade modal-width" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		    <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			        <div class="modal-header">
+				        <button type="button" class="close close-style" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Your informations</h4>
+			     	 </div>
+			        <div class="modal-body">
+			            <div class="position-tabs tab-menu" role="tabpanel">
+			            	<div class="menu-background">
+			            		<ul class="nav nav-tabs" role="tablist">
+			                        <li role="presentation" class="active data">
+			                            <a href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a>
+			                        </li>
+			                        <li role="presentation" class="repair">
+			                            <a href="#repair" aria-controls="repair" role="tab"
+			                               data-toggle="tab">Repair</a>
+			                        </li>
+			                        <li role="presentation" class="finish">
+			                            <a href="#finish" aria-controls="finish" role="tab" data-toggle="tab">Finish</a>
+			                        </li>
+		                    	</ul>
+			            	</div>
+		                    <div class="tab-content form-data">
+		                        <div role="tabpanel" class="tab-pane active" id="data">
+		                        <form action="/" method="post">
+		                        	<div class="form form1-line1">
+		                        		<div class="first-data">
+		                        			<p>Full name</p>
+		                        			<div class="error">
+		                        				<input type="text">
+		                        				<span class="question"type="button" data-container="body" data-toggle="popover" data-placement="right" data-content="Mauris condimentum nunc eu libero tincidunt non iaculis urna faucibus. Donec blandit ultricies libero"  aria-hidden="true"></span>
+		                        			</div>
+		                        		</div>
+		                        		<div class="second-data">
+		                        			<p>Company</p>
+		                        			<input type="text">
+		                        		</div>
+	                        		</div>
+		                        	<div class="form form1-line2">
+		                        		<div class="first-data">
+		                        			<p>Email</p>
+		                        			<input type="text">
+		                        		</div>
+		                        		<div class="second-data">
+		                        			<p>State</p>
+		                        			<div class="select-style">
+		                        				<select name="" id="sel">
+			                        				<option value=""></option>
+			                        				<option value="">Ukraine</option>
+			                        				<option value="">Russia</option>
+			                        				<option value="">Germany</option>
+			                        				<option value="">France</option>
+			                        			</select>
+			                        			<a class="select-caret" href="#sel"></a>
+		                        			</div>
+		                        		</div>
+	                        		</div>
+		                        	<div class="form form1-line3">
+		                        		<div class="first-data">
+		                        			<p>Postcode</p>
+		                        			<input type="text">
+		                        		</div>
+		                        		<div class="second-data">
+		                        			<p>Suburb</p>
+		                        			<div class="select-style">
+		                        				<select name="" id="">
+		                        					<option value=""></option>
+			                        				<option value="">Ukraine</option>
+			                        				<option value="">Russia</option>
+			                        				<option value="">Germany</option>
+			                        				<option value="">France</option>
+		                        				</select>
+		                        				<a class="select-caret" href="#sel"></a>
+		                        			</div>
+		                        		</div>
+	                        		</div>
+		                        	<div class="form form1-line4">
+		                        		<div class="first-data">
+		                        			<p>Address line 1</p>
+		                        				<input type="text">
+		                        		</div>
+		                        		<div class="second-data">
+		                        			<p>Address line 2</p>
+		                        			<input type="text">
+		                        		</div>
+	                        		</div>
+		                        </form>
+		                        <form action="/" method="post">
+		                        	<div class="form form2-line1">
+		                        		<div class="first-data">
+		                        			<p>Mobile phone</p>
+		                        			<input type="text">
+		                        		</div>
+		                        		<div class="second-data">
+		                        			<p>Landline phone</p>
+		                        			<input type="text">
+		                        		</div>
+	                        		</div>
+	                        		<div class="form form2-line2">
+		                        		<div class="first-data">
+		                        			<p>Brand of the phone</p>
+		                        			<input type="text">
+		                        		</div>
+		                        		<div class="second-data">
+		                        			<p>Phone model</p>
+		                        			<input type="text">
+		                        		</div>
+	                        		</div>
+	                        		<div class="form form2-line3">
+		                        		<div class="first-data">
+		                        			<p>Carrier</p>
+		                        			<input type="text">
+		                        		</div>
+		                        		<div class="second-data">
+		                        			<p>Passcode <span>(PIN or other code to unlock phone)</span></p>
+		                        			<input type="text">
+		                        		</div>
+	                        		</div>
+	                        		<div class="form form2-line4">
+		                        		<div class="first-data">
+		                        			<p>IMEI number <span>(or serial number for tablets)</span></p>
+		                        			<input type="text">
+		                        		</div>
+		                        		<div class="second-data checkbox">
+		                        			<input type="checkbox" id="check1" name="flag">
+		                        			<label for="check1">
+		                        				Want a free phone <br/><span>while his is being repaired</span>
+		                        			</label>
+		                        		</div>
+	                        		</div>
+		                        </form>
+		                        </div>
+		                    </div>
+		                    <div class="tab-content">
+		                        <div role="tabpanel" class="tab-pane active" id="repair">
+		                        </div>
+		                    </div>
+		                    <div class="tab-content">
+		                        <div role="tabpanel" class="tab-pane active" id="finish">
+		                        </div>
+		                    </div>
+	                    </div>
+			        </div>
+			    </div>
+		    </div>
+		</div>
+	</div>
+</body>
+</html>
